@@ -6,14 +6,12 @@ Student ID: **0210152807**
 
 To run this pipeline, you will have to simply:
 
-    Clone the repository;
-    Run ```renv::restore()``` to install all the required libraries.
+- Clone the repository;
+- Run ```renv::restore()``` to install all the required libraries.
 
 You should now restart your R session and rhen run the pipeline with ```targets::tar_make()```
 
-You can take a look at some plots by running:
-```
-tar_read(plot_physicians_per_thousand)
+You can take a look at some plots by running: ```tar_read(plot_physicians_per_thousand)
 tar_read(plot_infant_deaths)
 tar_read(plot_mobile_cellular_subscription)
 tar_read(plot_top_ten_infant_deaths_2020)
