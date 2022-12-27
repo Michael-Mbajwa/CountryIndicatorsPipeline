@@ -6,6 +6,10 @@ source("functions.R")
 
 
 list(
+  tar_target(world_bank_indicators, all_indicators()
+    
+  ),
+  
   tar_target(
     all_countries_in_data, CountryIndicatorsPkg::all_countries()
   ),

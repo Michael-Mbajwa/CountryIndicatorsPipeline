@@ -1,5 +1,5 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|343b44c188b45802|||||||||||||||
+.Random.seed|object|9c4b871fc3c03113|||||||||||||||
 all_countries_in_data|stem|18487f3420c9ee70|bc392d4d530bf75d|c3b5fc02cdc369c1|-1009132022||t19353.9491439483s|49e9f66aa0959c81|1659|rds|local|vector|||0.005||
 angola_details|stem|6a47e4751833800b|5f1ba5911f8b711d|c3b5fc02cdc369c1|459779925||t19353.9491423636s|494b560fddd003d2|368|rds|local|vector|||0.262||
 idp|stem|d630c3a5aa3e02aa|258cb993011d1667|775b1d8752defc53|737935240||t19353.9491487519s|65b2697406fa85d2|331|rds|local|vector|||0.19||
@@ -31,3 +31,4 @@ top_homicides_2019|stem|659ebe38df12811a|bf5b5c60c6e29a4f|775b1d8752defc53|11163
 top_rail_lines_2019|stem|dd8bf2fbd8ff95de|af7508f3a6d7b887|775b1d8752defc53|-457508856||t19353.9491445988s|11016194afa2c5c5|297|rds|local|vector|||0.052||
 top_ten_infant_deaths_2020|stem|bebf6012add51120|28cee5213b533918|775b1d8752defc53|-2094971238||t19353.9491382815s|f2c7816cf0b6f497|305|rds|local|vector|||0.08||
 total_labor_force|stem|bac3c19268cd7bdc|f9bf1d0c2bbb44f2|775b1d8752defc53|187803961||t19353.9491465035s|801cade07abe9db2|312|rds|local|vector|||0.052||
+world_bank_indicators|stem|825e2aaf1e582126|24e93d5aa93ccee4|0974ec4b5c2a18fc|-647942474||t19353.9611472226s|5e7b0e066ce8daad|8348|rds|local|vector|||3.53||
