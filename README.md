@@ -1,8 +1,8 @@
 # CountryIndicatorsPipeline
 
-Author: **Michael Mbajwa**
+### Author: **Michael Mbajwa**
 
-Student ID: **0210152807**
+### Student ID: **0210152807**
 
 To run this pipeline, you will have to simply:
 
