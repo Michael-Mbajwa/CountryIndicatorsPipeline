@@ -8,7 +8,11 @@ To run this pipeline, you will have to simply:
 
 - Clone the repository by running ```git clone git@github.com:Michael-Mbajwa/CountryIndicatorsPkg.git```
 - Run ```renv::restore()``` to install all the required libraries.
+
+- The functions and data used in this pipeline are hosted in a separate package which can be visited with this like ```https://github.com/Michael-Mbajwa/CountryIndicatorsPipeline/tree/master``` 
+
 - You should now restart your R session and then run the pipeline with ```targets::tar_make()```
+
 - The data product (or output) from this pipeline is the index.html file that appeared on the root folder of this project.
 
 
