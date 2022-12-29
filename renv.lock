@@ -628,6 +628,20 @@
       "Hash": "15e9634c0fcd294799e9b2e929ed1b86",
       "Requirements": []
     },
+    "geomtextpath": {
+      "Package": "geomtextpath",
+      "Version": "0.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0fde68ff704fe1323dfe161e64669e3f",
+      "Requirements": [
+        "ggplot2",
+        "rlang",
+        "scales",
+        "systemfonts",
+        "textshaping"
+      ]
+    },
     "gert": {
       "Package": "gert",
       "Version": "1.9.2",

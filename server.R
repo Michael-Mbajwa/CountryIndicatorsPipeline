@@ -32,7 +32,8 @@ server <- function(session, input, output) {
     ShinyAppData %>%
       dplyr::filter(Indicator_Name==input$indicator & (Country_Name==input$country|Country_Name==input$country2))%>%
       dplyr::mutate(dplyr::across(dplyr::starts_with("va"), ~as.numeric(gsub(",", ".", .x))))%>%
-      distinct()
+      distinct()%>%
+      dplyr::mutate(Color=ifelse(Country_Name==input$country, "red", "#0b6623"))
   )
   
   
@@ -73,13 +74,13 @@ server <- function(session, input, output) {
   
   
   output$head_to_head <- renderPlot({
-    ggplot(dataset_hh(), aes(x=Year, y=values, group=Country_Name, color=Country_Name))+
-      geom_line(size=1.3) +
+    ggplot(dataset_hh(), aes(x=Year, y=values, group=Country_Name, color=Country_Name)) +
+      geomtextpath::geom_textline(aes(label=Country_Name),linewidth=1.3,
+                                  color=dataset_hh()$Color, hjust = .7, size=6) +
       labs(x="Year",
            y = input$indicator,
            title = paste("Head-to-Head performance of", input$country, "against", input$country2)) +
       scale_y_continuous(labels=function(n){format(n, scientific = FALSE)}) +
-      scale_color_manual(values = c("red", "#0b6623") , name="Country")+
       scale_x_discrete(breaks=c("1960", "1970", "1980", "1990", "2000", "2010", "2020")) +
       theme_classic() +
       theme(
@@ -94,4 +95,3 @@ server <- function(session, input, output) {
       )
   })
 }
-
