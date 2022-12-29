@@ -14,7 +14,7 @@ To run this pipeline, you will have to simply:
 
 - You should now restart your R session and then run the pipeline with ```targets::tar_make()```
 
-- The data product (or output) from this pipeline is the index.html file that appeared on the root folder of this project.
+- The data product (or output) from this pipeline is the index.html file that appears on the root folder of this project.
 
 
 You can take a look at some plots by running:
@@ -49,3 +49,10 @@ tar_read(total_labor_force)
 tar_read(idp)
 tar_read(world_bank_indicators)
 ```
+
+## SHINY APP
+
+To run the shiny app in this project:
+
+- Ensure you have run ```renv::restore()``` to install all the required libraries.
+- Run ```shiny::runApp(".")```
