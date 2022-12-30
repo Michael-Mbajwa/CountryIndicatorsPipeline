@@ -14,8 +14,6 @@ To run this pipeline, you will have to simply:
 
 - You should now restart your R session and then run the pipeline with ```targets::tar_make()```
 
-- The data product (or output) from this pipeline is the index.html file that appears on the root folder of this project.
-
 
 You can take a look at some plots by running:
 ```targets::tar_read(plot_physicians_per_thousand)

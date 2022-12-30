@@ -8,7 +8,7 @@ ui <- function(request){
                        label="Country:",
                        choices=c("All",
                          unique(as.character(ShinyAppData$Country_Name))),
-                       selected = "Nigeria")
+                       selected = "Portugal")
     ),
     column(4,
            selectInput(inputId="indicator",
@@ -38,7 +38,7 @@ ui <- function(request){
                        label="Country2:",
                        choices=c("All",
                                  unique(as.character(ShinyAppData$Country_Name))),
-                       selected = "Afghanistan")),
+                       selected = "Azerbaijan")),
   ),
   
   fluidRow(
