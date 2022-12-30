@@ -4,6 +4,8 @@
 
 ### Student ID: **0210152807**
 
+### Email: **michael.mbajwa.001@student.uni.lu**
+
 
 To run this pipeline, you will have to simply:
 
