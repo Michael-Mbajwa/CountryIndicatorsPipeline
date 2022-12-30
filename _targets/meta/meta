@@ -1,7 +1,10 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-.Random.seed|object|76224ff5a12e5894|||||||||||||||
+.Random.seed|object|e5ba52dfc2596e7b|||||||||||||||
+a|object|34f4677a457aca65|||||||||||||||
 all_countries_in_data|stem|18487f3420c9ee70|bc392d4d530bf75d|c3b5fc02cdc369c1|-1009132022||t19353.9491439483s|49e9f66aa0959c81|1659|rds|local|vector|||0.005||
 angola_details|stem|6a47e4751833800b|5f1ba5911f8b711d|c3b5fc02cdc369c1|459779925||t19353.9491423636s|494b560fddd003d2|368|rds|local|vector|||0.262||
+defaultW|object|96fbe1f139ff3d24|||||||||||||||
+general_map_plot|function|b1a33d038e5a4ced|||||||||||||||
 idp|stem|d630c3a5aa3e02aa|258cb993011d1667|775b1d8752defc53|737935240||t19353.9491487519s|65b2697406fa85d2|331|rds|local|vector|||0.19||
 infant_deaths|stem|9c31c457bd06efde|0917a32af1bc8ae8|775b1d8752defc53|1926460705||t19353.9491364405s|963debf989303649|304|rds|local|vector|||0.064||
 make_plot_countries|function|e07b46968424935f|||||||||||||||
@@ -10,8 +13,8 @@ maternal_deaths|stem|e7ecf7565b367fee|cdc55a5e3331a959|775b1d8752defc53|-1815585
 military_expenditure|stem|9147d16329b9923e|0f367e306a6efb2d|775b1d8752defc53|-172891584||t19353.9491431424s|a38f23e054c8be1f|332|rds|local|vector|||0.061||
 mobile_cellular_subscription|stem|7638beb3885ee611|00defaf063e54d39|775b1d8752defc53|-1537295904||t19353.9491372875s|cb91aba74fec518e|303|rds|local|vector|||0.068||
 physicians_per_thousand|stem|d8f01c21c5c83fce|1218479b5a65a195|775b1d8752defc53|910379547||t19353.9491354736s|4b961c631a2d04c8|360|rds|local|vector|||3.432||
-plot_angola_details|stem|f963ab94e3b0b35d|72cfd0e46009bc2d|c4e238e8a7997154|-316286274||t19353.9491697185s|a7e5510012797603|4801819|rds|local|vector|||0.427||
-plot_existing_countries|stem|394ab01742277418|1693a4b6cb3e4cc7|c7f049783121aa45|-311888233||t19353.9491782948s|28345dccf43b8177|2501676|rds|local|vector|||0.141||
+plot_angola_details|stem|1094c1c1f7decdcf|68466585a5e283a8|b2440a022507aa31|-316286274||t19356.7094447446s|7d15edd4f1d5edff|4801881|rds|local|vector|||0.545||
+plot_existing_countries|stem|402f5629c29cc597|24bbf4cde4577572|c3b5fc02cdc369c1|-311888233||t19356.7094237828s|c6e93442ec07c2cb|2501850|rds|local|vector|||3.594||
 plot_idp|stem|721a578fc834a295|343bfe51d8e2783e|b00ffb381e145022|-1860879758||t19353.9491976547s|af11a8f9e19778be|68187|rds|local|vector|||0.004||
 plot_infant_deaths|stem|0f3060fc3eaae111|f387215404354b02|ead728020f51d348|-2024700015||t19353.9491501467s|ea8d5ae8ba251cc7|68073|rds|local|vector|||0.024||
 plot_maternal_deaths|stem|fa0bd89ce3143dba|979f880152e75a67|e29af4026e5a9672|260528294||t19353.9491515123s|8a35e107123c3198|67737|rds|local|vector|||0.003||
@@ -20,7 +23,7 @@ plot_mobile_cellular_subscription|stem|5ac84398027b81b9|bdf44c58668cfeb1|1bb284a
 plot_outages_firms|stem|51643d78e161a2c0|af24e5b45a37b657|0b8af85f92656e4a|868430454||t19353.9491791715s|21d2c53bd5f012e7|68158|rds|local|vector|||0.003||
 plot_physicians_per_thousand|stem|14f6606ba544f457|066962c9930a5322|37601b4fc17fafea|490736931||t19353.9491493913s|eee1a08584266909|68162|rds|local|vector|||0.013||
 plot_ranked_indicators|function|b2ff9f56c9bba78a|||||||||||||||
-plot_spain_details|stem|1842f9d67924e63f|8e276401d059aacd|16884dd1dd9ea988|-1266235264||t19353.9491967807s|697be47facfda989|4805765|rds|local|vector|||0.383||
+plot_spain_details|stem|9a9053cc44203323|aafacc5c72492414|4297bc30b40e4b18|-1266235264||t19356.7094658331s|33ebb237ce346c61|4805871|rds|local|vector|||0.592||
 plot_top_homicides_2019|stem|788d888137aeb48f|e18a53df7c919a8f|bee6aa565832fb0a|2129554194||t19353.9491705734s|87df8a9adbf0d8ca|68280|rds|local|vector|||0.004||
 plot_top_rail_lines_2019|stem|7e01148e2298d7e6|be3ad1935c97c376|5d0addd0452e7850|1899928106||t19353.9491787566s|083657ed86204e9c|68064|rds|local|vector|||0.003||
 plot_top_ten_infant_deaths_2020|stem|1e34dd4668f1e3c4|b057becfeedc0678|c1ad0cf8cd48fab0|-322324783||t19353.9491510899s|c1732ede69241e46|68088|rds|local|vector|||0.003||

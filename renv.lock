@@ -17,9 +17,9 @@
       "RemoteHost": "api.github.com",
       "RemoteRepo": "CountryIndicatorsPkg",
       "RemoteUsername": "Michael-Mbajwa",
-      "RemoteRef": "6344e5a86552c7e8ea8575e8b524ad285665c541",
-      "RemoteSha": "6344e5a86552c7e8ea8575e8b524ad285665c541",
-      "Hash": "156639367ce61b42f66bf62057b9078d",
+      "RemoteRef": "51be55b90bcd9111e0e1ee73018be32b16e7af78",
+      "RemoteSha": "51be55b90bcd9111e0e1ee73018be32b16e7af78",
+      "Hash": "fbe19839b9e11338fdb8836d2cd8e678",
       "Requirements": [
         "arrow",
         "devtools",

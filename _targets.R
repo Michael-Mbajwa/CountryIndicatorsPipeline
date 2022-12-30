@@ -15,7 +15,7 @@ list(
   ),
   
   tar_target(
-    plot_existing_countries, make_plot_countries(all_countries_in_data)
+    plot_existing_countries, CountryIndicatorsPkg::make_plot_countries()
   ),
   
   tar_target(
@@ -27,11 +27,11 @@ list(
   ),
   
   tar_target(
-    plot_spain_details, map_country(spain_details)
+    plot_spain_details, CountryIndicatorsPkg::map_country(all_country_details=spain_details)
   ),
   
   tar_target(
-    plot_angola_details, map_country(angola_details)
+    plot_angola_details, CountryIndicatorsPkg::map_country(all_country_details=angola_details)
   ),
   
   tar_target(top_ten_infant_deaths_2020, 

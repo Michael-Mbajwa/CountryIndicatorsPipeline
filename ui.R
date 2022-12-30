@@ -27,8 +27,9 @@ ui <- function(request){
   ),
   
   fluidRow(
-      column(width = 6, plotOutput("top_n")),
-      column(width = 6,  plotOutput("bottom_n")),
+      column(width = 4, plotOutput("map_one")),
+      column(width = 4, plotOutput("top_n")),
+      column(width = 4,  plotOutput("bottom_n")),
   ),
   
   fluidRow(
@@ -37,11 +38,12 @@ ui <- function(request){
                        label="Country2:",
                        choices=c("All",
                                  unique(as.character(ShinyAppData$Country_Name))),
-                       selected = "Angola")),
+                       selected = "Afghanistan")),
   ),
   
   fluidRow(
-    column(width = 12, plotOutput("head_to_head"))
+    column(width = 4, plotOutput("map_two")),
+    column(width = 8, plotOutput("head_to_head"))
   )
 )
 }

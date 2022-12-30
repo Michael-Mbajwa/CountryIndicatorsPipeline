@@ -1,5 +1,13 @@
 server <- function(session, input, output) {
-  # filter filter
+  
+  general_map_plot <- function(all_country_details){
+    attempt <- try(CountryIndicatorsPkg::map_country(all_country_details), silent=TRUE)
+    if(inherits(attempt, "try-error")){
+      attempt2 <- CountryIndicatorsPkg::make_plot_countries(map_title = "Country Not Found. Plotting World Map.")
+      return(attempt2)
+    } else {return(attempt)}
+  }
+  
   dataset_top <- reactive(
     bind_rows(ShinyAppData %>% 
                 dplyr::filter(Indicator_Name==input$indicator & Year==input$year)%>%
@@ -44,7 +52,7 @@ server <- function(session, input, output) {
       labs(title=paste(input$country, "aganist Top 10 globally in", input$year),
            x = "Country") +
       theme(
-        plot.title=element_text(family='', face='bold', size=25),
+        plot.title=element_text(family='', face='bold', size=18),
         axis.title.y = element_blank(),
         axis.text.y = element_text(family='', size=12, color = "black"),
         axis.title.x = element_blank(),
@@ -62,7 +70,7 @@ server <- function(session, input, output) {
       labs(title=paste(input$country, "aganist Bottom 10 globally in", input$year),
            x = "Country") +
       theme(
-        plot.title=element_text(family='', face='bold', size=25),
+        plot.title=element_text(family='', face='bold', size=18),
         axis.title.y = element_blank(),
         axis.text.y = element_text(family='', size=12, color = "black"),
         axis.title.x = element_blank(),
@@ -84,7 +92,7 @@ server <- function(session, input, output) {
       scale_x_discrete(breaks=c("1960", "1970", "1980", "1990", "2000", "2010", "2020")) +
       theme_classic() +
       theme(
-        plot.title=element_text(family='', face='bold', size=25),
+        plot.title=element_text(family='', face='bold', size=18),
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         axis.text.y = element_text(family='', size=12, color = "black"),
@@ -93,5 +101,13 @@ server <- function(session, input, output) {
         legend.text = element_text(family='', face='bold', size=12),
         legend.title = element_text(family='', face='bold', size=12)
       )
+  })
+  
+  output$map_one <- renderPlot({
+    general_map_plot(all_country_details = country_key_details(input$country))
+  })
+  
+  output$map_two <- renderPlot({
+    general_map_plot(all_country_details = country_key_details(input$country2))
   })
 }
