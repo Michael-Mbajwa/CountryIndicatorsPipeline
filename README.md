@@ -57,3 +57,6 @@ To run the shiny app in this project:
 - Ensure you have run ```renv::restore()``` to install all the required libraries.
 - Run ```shiny::runApp(".")```
 - Expand the screen for best display of the shiny dashboard.
+
+The image below shows users how to interact with the dashboard:
+![Helper Image for Shiny Dashboard](Images/HelperDashboard.png)
