@@ -59,4 +59,4 @@ To run the shiny app in this project:
 - Expand the screen for best display of the shiny dashboard.
 
 The image below shows users how to interact with the dashboard:
-![Helper Image for Shiny Dashboard](Images/HelperDashboard.png)
+![Helper Image for Shiny Dashboard](Images/MainHelperImage.png)
