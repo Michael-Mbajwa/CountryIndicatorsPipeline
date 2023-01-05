@@ -9,7 +9,7 @@
 
 To run this pipeline, you will have to simply:
 
-- Clone the repository by running ```git clone git@github.com:Michael-Mbajwa/CountryIndicatorsPkg.git```
+- Clone the repository by running ```git clone git@github.com:Michael-Mbajwa/CountryIndicatorsPkg.git``` or ```git clone https://github.com/Michael-Mbajwa/CountryIndicatorsPipeline.git```
 - Run ```renv::restore()``` to install all the required libraries.
 
 - The functions and data used in this pipeline are hosted in a separate package called [CountryIndicatorsPkg](https://github.com/Michael-Mbajwa/CountryIndicatorsPkg)
